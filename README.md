@@ -19,20 +19,20 @@ root@kali:~/go/src/github.com/ren-zxcyq/go-endc# ~/go/bin/go-endc -s "/root/go/s
 
 ### Decrypting encrypted files contents.
 ```
-root@kali:~/go/src/github.com/ren-zxcyq/go-endc# ~/go/bin/go-endc -s "/root/go/src/github.com/ren-zxcyq/go-endc/encryptedthefile" -d "/root/go/src/github.com/ren-zxcyq/go-endc/testdecreption" -p "01234567890123456789012345678911" -decrypt
+root@kali:~/go/src/github.com/ren-zxcyq/go-endc# ~/go/bin/go-endc -s "/root/go/src/github.com/ren-zxcyq/go-endc/encryptedthefile" -d "/root/go/src/github.com/ren-zxcyq/go-endc/testdecryption" -p "01234567890123456789012345678911" -decrypt
 [*]     Src:     /root/go/src/github.com/ren-zxcyq/go-endc/encryptedthefile
-[*]     Dst:     /root/go/src/github.com/ren-zxcyq/go-endc/testdecreption
+[*]     Dst:     /root/go/src/github.com/ren-zxcyq/go-endc/testdecryption
 [*]     Decrypting file contents
 ```
 
 ### Current directory file contents.
 ```
 root@kali:~/go/src/github.com/ren-zxcyq/go-endc# ls
-encryptedthefile  go-endc.go  test  testdecreption
+encryptedthefile  go-endc.go  test  testdecryption
 root@kali:~/go/src/github.com/ren-zxcyq/go-endc# cat test
 testing
 root@kali:~/go/src/github.com/ren-zxcyq/go-endc# cat encryptedthefile 
 >�Ԋ)���"��yP���nDT�|��D��ކ=}��<B 
-root@kali:~/go/src/github.com/ren-zxcyq/go-endc# cat testdecreption 
+root@kali:~/go/src/github.com/ren-zxcyq/go-endc# cat testdecryption 
 testing
 ```
