@@ -2,14 +2,14 @@
 Encrypt / Decrypt a file via the command line
 AES - GCM
 
-##Example:
+## Example:
 
-###Let's create a test file.
+### Let's create a test file.
 ```
 root@kali:~/go/src/github.com/ren-zxcyq/go-endc# go installroot@kali:~/go/src/github.com/ren-zxcyq/go-endc# echo "testing" > test
 ```
 
-###Encrypting test files contents.
+### Encrypting test files contents.
 ```
 root@kali:~/go/src/github.com/ren-zxcyq/go-endc# ~/go/bin/go-endc -s "/root/go/src/github.com/ren-zxcyq/go-endc/test" -d "/root/go/src/github.com/ren-zxcyq/go-endc/encryptedthefile" -p "01234567890123456789012345678911" -encrypt
 [*]     Src:     /root/go/src/github.com/ren-zxcyq/go-endc/test
@@ -17,7 +17,7 @@ root@kali:~/go/src/github.com/ren-zxcyq/go-endc# ~/go/bin/go-endc -s "/root/go/s
 [*]     Encrypting file contents
 ```
 
-###Decrypting encrypted files contents.
+### Decrypting encrypted files contents.
 ```
 root@kali:~/go/src/github.com/ren-zxcyq/go-endc# ~/go/bin/go-endc -s "/root/go/src/github.com/ren-zxcyq/go-endc/encryptedthefile" -d "/root/go/src/github.com/ren-zxcyq/go-endc/testdecreption" -p "01234567890123456789012345678911" -decrypt
 [*]     Src:     /root/go/src/github.com/ren-zxcyq/go-endc/encryptedthefile
@@ -25,7 +25,7 @@ root@kali:~/go/src/github.com/ren-zxcyq/go-endc# ~/go/bin/go-endc -s "/root/go/s
 [*]     Decrypting file contents
 ```
 
-###Current directory file contents.
+### Current directory file contents.
 ```
 root@kali:~/go/src/github.com/ren-zxcyq/go-endc# ls
 encryptedthefile  go-endc.go  test  testdecreption
